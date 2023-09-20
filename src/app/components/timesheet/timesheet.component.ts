@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Department } from 'src/app/interfaces/department';
 import { DepartmentsService } from 'src/app/services/departments.service';
+import { FormControl } from '@angular/forms';
+import { Employee } from 'src/app/interfaces/employee';
 
 @Component({
   selector: 'app-timesheet',
@@ -11,6 +13,10 @@ import { DepartmentsService } from 'src/app/services/departments.service';
 export class TimesheetComponent implements OnInit {
   departments: Department[] | undefined;
   department: Department | undefined;
+  employeeNameFC = new FormControl('');
+  employees: Employee[] = [];
+  employeeId = 0;
+
 
   constructor(
     private route: ActivatedRoute,
