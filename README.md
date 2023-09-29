@@ -9,3 +9,4 @@ npm install firebase @angular/fire --save
 
 
 npm install --save @angular/cli && npm run build
+ng build --configuration production
