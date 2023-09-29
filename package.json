@@ -10,8 +10,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "prebuild": "npm i --legacy-peer-deps && npm i --save @angular/core @angular/cli && npm i --save @angular/material @angular/cdk @angular/animations && npm i --save firebase",
-    "prod": "ng build --configuration production"
+    "testerr": "npm i --legacy-peer-deps && npm i --save @angular/core @angular/cli && npm i --save @angular/material @angular/cdk @angular/animations && npm i --save firebase",
+    "tester": "ng build --configuration production"
   },
   "private": true,
   "dependencies": {
